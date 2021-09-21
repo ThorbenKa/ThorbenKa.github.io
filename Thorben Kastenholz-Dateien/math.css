@@ -1,0 +1,63 @@
+#nav_main {background: #578bb8;display: flex; flex-wrap: wrap; border-top: 1px solid #fff ; font-size: 80%; }
+#nav_main > a {font-weight: normal; padding: 0.5em 0.8em 0.5em 0.8em; border-right: 1px solid white; border-bottom: 1px solid white ; text-transform: uppercase; max-width: 30%; text-align: center;}
+#nav_main >a:hover {background-color: #80b0da; text-decoration: unset;}
+#nav_main .dummy {flex:1; border-bottom: 1px solid white;}
+#header a, #header a:visited, #header {color: white;}
+#header {background-color: #467aa7;}
+#sprachen {min-height: 2em; margin-left: auto; margin-right: 10px; max-width: max-content; font-size: 80%; }
+#header_main { padding-top: 10px; background-image: url("/images/logo_trans.gif"); background-position: calc(100% - 10px) 50%; background-repeat: no-repeat;}
+#header_main > h1 > span {display: block; margin-left: 2em; font-size: 60%; font-weight: normal;}
+#header_main > h1 {font-weight: normal; margin-left: 15px; margin-bottom: 0em; letter-spacing: -0.025em; line-height: 90%; margin-top: 0.25em;}
+#footer {color: #fff;background: #467aa7;padding: 10px 20px;border-top: 5px #efefef solid;text-align: center;}
+h1, h2, h3, h4, h5, h6 {font-weight: normal; margin: 0 0 0.25em 0; color: #666666;}
+li {line-height: 1.5em;}
+html {background-color: #eaeaea; font-family: Verdana, Tahoma, Arial, sans-serif; color: #444444;}
+p {line-height: 1.5;}
+a { color: #4D87C7; text-decoration: none;}
+#main a {font-weight: bold;}
+a:focus, a:hover, a:active {color: #2a5a8a; text-decoration: underline;}
+#topnav {max-width: max-content;margin-left: auto; margin-right: 10px; padding-top: 5px; font-size: 80%;}
+#main {display:flex; flex-wrap: wrap; padding: 10px}
+#page {max-width: 1200px; margin: auto; margin-top: 1ex; margin-bottom: 1ex; padding: 2px; border-color: gray; border-style: solid; border-width: 2px;background-color: white;}
+.box {padding: 10px; border: 1px solid #c0c0c0; background-color: #fafbfc; color: #505050; line-height: 1.5em; margin-bottom: 20px;}
+.small {font-size: 75%;}
+#col1 {max-width: 74%; font-size: 85%; padding-top: 10px;}
+#col1.nonews {max-width: 100%;}
+#col2 {max-width: 24%; margin-left: auto;}
+#col2.nonews {display: none;}
+.subcolumns {display: flex; flex-wrap: wrap;}
+.subcolumns > div {width: 49%;}
+img {max-width: 100%;}
+img.screenshot {margin: 1em;}
+img.centered{margin: auto; display: block;}
+img.narrow{max-width: 50%;}
+/*
+ * Schriftgröße wie in der legacy Seite
+ */
+#main {font-size: 90%;}
+h2 {font-size: 170%;}
+h3 {font-size: 150%;}
+
+#header_main > h1 {color: white;}
+
+td, th { line-height: 2; } /* Zeilenabstand in Listen */
+
+@media only screen and (max-width: 1000px) {
+	#page {width: unset;}
+	#col1 {max-width: 70%; margin-left: 5px;}
+	#col2 {max-width: 29%;}
+	.subcolumns > div {width: 100%;}
+}
+@media only screen and (max-width: 650px) {
+	#page {width: unset;}
+	#col1 {max-width: 100%; margin-left: 5px; margin-right: 5px;}
+	#col2 {max-width: 100%; margin-left: 5px; margin-right: 5px;}
+	#page {margin: auto;}
+	#header_main {background-position: calc(100% - 10px) 75%; min-height: 140px;}
+	.subcolumns > div {width: 100%;}
+	#nav_main > a {flex-grow: 1; }
+}
+@media only screen and (max-width: 360px) {
+	#header_main > h1 {font-size: 185%; margin-left: 15px;}
+	#header_main > h1 > span {margin-left: 1em;}
+}
